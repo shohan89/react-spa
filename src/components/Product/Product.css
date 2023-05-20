@@ -38,3 +38,6 @@
   background-color: orange;
   transition: ease 0.2s;
 }
+.btn-cart p{
+  font-weight: 600;
+}
