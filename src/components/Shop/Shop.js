@@ -16,7 +16,7 @@ const Shop = () => {
   },[] );
   // send handleAddToCart event handler to product component
   const handleAddToCart = product =>{
-    console.log( product );
+    // console.log( product );
     const newCart = [ ...cart, product ];
     setCart( newCart );
   }
