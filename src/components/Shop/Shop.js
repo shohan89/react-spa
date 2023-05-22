@@ -16,13 +16,20 @@ const Shop = () => {
       .then( data => setProducts( data ) )
   },[] );
 
+  // Save cart data from localStorage 
   useEffect( ()=>{
     const storedCart = getStoredCart();
+    const savedCart = [];
     for (const id in storedCart) {
       const addedProduct = products.find( product => product.id === id );
-      console.log( addedProduct );
+      if( addedProduct ){
+        const quantity = storedCart[ id ];
+        addedProduct.quantity = quantity;
+        savedCart.push( addedProduct );
+      }
     }
-  }, [] )
+    setCart( savedCart );
+  }, [ products ] )
 
   // send handleAddToCart event handler to product component
   const handleAddToCart = product =>{
