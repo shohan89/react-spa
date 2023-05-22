@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Shop.css';
 import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
-import { addToDb } from '../../utilities/fakedb';
+import { addToDb, getStoredCart } from '../../utilities/fakedb';
 
 const Shop = () => {
   const [ products, setProducts ] = useState([]);
@@ -15,6 +15,15 @@ const Shop = () => {
       .then( res => res.json())
       .then( data => setProducts( data ) )
   },[] );
+
+  useEffect( ()=>{
+    const storedCart = getStoredCart();
+    for (const id in storedCart) {
+      const addedProduct = products.find( product => product.id === id );
+      console.log( addedProduct );
+    }
+  }, [] )
+
   // send handleAddToCart event handler to product component
   const handleAddToCart = product =>{
     // console.log( product );
