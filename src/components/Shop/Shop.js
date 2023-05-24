@@ -29,7 +29,7 @@ const Shop = () => {
       }
     }
     setCart( savedCart );
-  }, [ products ] )
+  }, [ products ] );
 
   // send handleAddToCart event handler to product component
   const handleAddToCart = product =>{
