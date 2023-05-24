@@ -2,7 +2,7 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = ({ cart }) => {
-  console.log( cart );
+  // console.log( cart );
 
   // Initialize default value of total price and shipping
   let total = 0;
