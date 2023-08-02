@@ -14,10 +14,6 @@ function App() {
       element: <Layout />,
       children: [
         {
-          path: '/',
-          element: <Shop />,
-        },
-        {
           path: '/shop',
           loader: () => fetch( 'products.json' ),
           element: <Shop />,
