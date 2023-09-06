@@ -1,0 +1,9 @@
+.error-container{
+    width: 80%;
+    background: rgb(224, 70, 70);
+    border-radius: 10px;
+}
+.error-container p{
+    color: aliceblue;
+    padding: 15px;
+}
