@@ -17,3 +17,11 @@
   color: orange;
   transition: ease-in 0.3s;
 }
+.logout{
+  margin-left: 10px;
+  cursor: pointer;
+}
+.header-email{
+  color: #ffffff;
+  margin-left: 10px;
+}

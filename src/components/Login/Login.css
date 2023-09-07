@@ -48,6 +48,7 @@
     color: #0E161A;
     padding-left: 10px;
     border: none;
+    cursor: pointer;
 }
 .btn-submit:hover{
     background: rgb(255, 153, 0, 0.6);
