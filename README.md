@@ -1,20 +1,46 @@
-# React Spa Project (Ema John)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Emma John (React SPA Project)
+## Overview
+Emma John is a feature-rich single-page application (SPA) built using React, React Router, Context API, Firebase Authentication, and more. This project serves as a comprehensive showcase of modern web development technologies, providing a seamless and engaging user experience for Online Shopping.
+## Demo
 
-## Available Scripts
+Emma John - [https://react-spa-6ce63.web.app/]
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![App Screenshot](https://ibb.co/XDPS6LB)
+## Features
 
-### `npm test`
+- React Router: Seamlessly navigate between different sections of the application with client-side routing, providing a smooth user experience.
+- Manage global state efficiently, ensuring data is shared and updated consistently across components.
+- Firebase Authentication: Enable secure user authentication and authorization, allowing users to sign in, sign up, and access personalized content.
+- Cart: A user can add their favorite product to the cart. Where they can add multiple items and calculate the items price and show the total price.
+- Private Route: A user can only visit some routes while they are loggedin.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+## Technologies Used
+
+**Client:** React, React Router Dom, Context API, Private Routes, Firebase Authentication, Vanilla CSS, Font Awesome Icon
+
+**Hosting:** Firebase
+
+
+## Getting Started
+
+Install react-spa with npm
+
+```bash
+  # Clone the repository
+  git clone https://github.com/shohan89/react-spa.git
+
+  # Navigate to the project folder
+  cd react-spa
+
+  # Install dependencies
+  npm install
+
+  # Start the development server
+  npm start
+```
+    
